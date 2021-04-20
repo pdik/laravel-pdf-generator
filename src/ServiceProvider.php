@@ -5,13 +5,16 @@ namespace Pdik\laravelPdfGenerator;
 use Illuminate\Support\ServiceProvider as Provider;
 use Livewire\Livewire;
 use Illuminate\Routing\Router;
-
+use Illuminate\Support\Facades\Storage;
 class ServiceProvider extends Provider
 {
+
 	public function boot()
 	{
 		$this->registerConfigs();
-
+		 if(!File::isDirectory(config('Generatepdf.path', 'pdf'))) {
+             Storage::makeDirectory(config('Generatepdf.path', 'pdf'));
+         }
 	}
 
 

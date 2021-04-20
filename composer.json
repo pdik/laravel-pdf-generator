@@ -21,6 +21,7 @@
         "illuminate/support": "^8.0",
         "illuminate/view": "^8.32",
         "livewire/livewire": "^2.4",
+         "qcod/laravel-app-settings": "^1.4",
         "spatie/laravel-permission": "^4.0"
     },
     "require-dev": {
