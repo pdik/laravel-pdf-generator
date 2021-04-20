@@ -16,6 +16,7 @@
     ],
     "require": {
         "php": "^7.4",
+        "tecnickcom/tcpdf": "^6.3",
         "illuminate/routing": "^8.29",
         "illuminate/support": "^8.0",
         "illuminate/view": "^8.32",
